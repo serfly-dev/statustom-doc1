@@ -1,0 +1,79 @@
+{
+  "meta": {
+    "name": "СтатуСтом",
+    "description": "Светлая стоматологическая система с глубоким графитовым текстом и точечными золотыми акцентами.",
+    "version": "1.0.0",
+    "created": "2026-10-07",
+    "personality": "Спокойная медицинская уверенность с премиальным золотым акцентом из фирменного знака. Белые и тёплые поверхности поддерживают ощущение чистоты; тёмный графит добавляет веса, а золото остаётся редкой подписью бренда, а не декоративным шумом."
+  },
+  "colors": {
+    "primary": { "value": "#94670F", "usage": "Основной фирменный золотой для логотипных акцентов, ссылок и небольших маркеров; контраст с белым 4.99:1." },
+    "primary-hover": { "value": "#79530C", "usage": "Золотой hover для интерактивных элементов на светлом фоне." },
+    "secondary": { "value": "#221F1A", "usage": "Графитовый цвет для основных тёмных CTA, заголовков и навигации." },
+    "accent": { "value": "#D2AA50", "usage": "Светлое декоративное золото для крупных площадей, линий и градиента логотипа; не использовать для мелкого текста на белом." },
+    "background": { "value": "#FAF9F6", "usage": "Основной тёплый почти белый фон страницы." },
+    "surface": { "value": "#FFFFFF", "usage": "Карточки, формы и контентные поверхности." },
+    "surface-elevated": { "value": "#FFFFFF", "usage": "Всплывающие панели и модальные окна; отделять тенью и рамкой." },
+    "border": { "value": "#E6E1D8", "usage": "Ненавязчивые разделители и границы полей." },
+    "text-primary": { "value": "#221F1A", "usage": "Основной текст на светлых поверхностях." },
+    "text-secondary": { "value": "#5B554B", "usage": "Подписи, пояснения и вторичная навигация." },
+    "text-on-primary": { "value": "#FFFFFF", "usage": "Текст на глубоком золотом primary (#94670F); контраст 4.99:1." },
+    "success": { "value": "#24734D", "usage": "Подтверждение записи и успешные статусы." },
+    "warning": { "value": "#8A5A00", "usage": "Предупреждения и требующие внимания статусы." },
+    "error": { "value": "#B42318", "usage": "Ошибки валидации и критические состояния." },
+    "info": { "value": "#315F78", "usage": "Нейтральные информационные подсказки." },
+    "surface-dark": { "value": "#221F1A", "usage": "Тёмные тематические секции и контрастные панели." },
+    "text-on-dark": { "value": "#FFFFFF", "usage": "Текст и иконки на графитовой поверхности." },
+    "gold-soft": { "value": "#F3E8CC", "usage": "Мягкие золотистые подложки для бейджей и выбранных элементов." }
+  },
+  "typography": {
+    "font-display": { "family": "Cormorant Garamond", "fallback": "Georgia, 'Times New Roman', serif", "source": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" },
+    "font-body": { "family": "Manrope", "fallback": "'Segoe UI', Arial, sans-serif", "source": "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" },
+    "font-mono": { "family": "JetBrains Mono", "fallback": "'SFMono-Regular', Consolas, monospace", "source": "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" },
+    "scale": {
+      "xs": { "size": "0.75rem", "lineHeight": "1rem", "usage": "Служебные подписи и метаданные; не использовать для длинного текста." },
+      "sm": { "size": "0.875rem", "lineHeight": "1.25rem", "usage": "Подписи, бейджи и вторичный текст." },
+      "base": { "size": "1rem", "lineHeight": "1.625rem", "usage": "Основной текст интерфейса и описания услуг." },
+      "lg": { "size": "1.125rem", "lineHeight": "1.75rem", "usage": "Вступительный текст и заметные описания." },
+      "xl": { "size": "1.25rem", "lineHeight": "1.75rem", "usage": "Заголовки карточек и компактных секций." },
+      "2xl": { "size": "1.5rem", "lineHeight": "2rem", "usage": "Заголовки блоков и диалогов." },
+      "3xl": { "size": "1.875rem", "lineHeight": "2.25rem", "usage": "Заголовки секций на мобильном экране." },
+      "4xl": { "size": "2.25rem", "lineHeight": "2.5rem", "usage": "Заголовки секций на широком экране." },
+      "display": { "size": "clamp(2.75rem, 5.5vw, 4.75rem)", "lineHeight": "0.98", "usage": "Единственный главный заголовок первого экрана." }
+    },
+    "weights": { "normal": 400, "medium": 500, "semibold": 600, "bold": 700 }
+  },
+  "spacing": {
+    "base-unit": "4px",
+    "scale": {
+      "0": "0", "1": "0.25rem", "2": "0.5rem", "3": "0.75rem", "4": "1rem", "5": "1.25rem", "6": "1.5rem", "8": "2rem", "10": "2.5rem", "12": "3rem", "16": "4rem", "20": "5rem", "24": "6rem"
+    }
+  },
+  "borders": {
+    "radius": { "none": "0", "sm": "0.375rem", "md": "0.75rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+    "width": { "default": "1px", "thick": "2px" }
+  },
+  "shadows": {
+    "sm": { "value": "0 1px 3px rgb(34 31 26 / 6%)", "usage": "Тонкое отделение полей и небольших карточек." },
+    "md": { "value": "0 12px 32px rgb(34 31 26 / 8%)", "usage": "Стандартная глубина для карточек и выпадающих панелей." },
+    "lg": { "value": "0 24px 64px rgb(34 31 26 / 16%)", "usage": "Диалоги и верхнеуровневые всплывающие элементы." },
+    "glow": { "value": "0 0 0 4px rgb(148 103 15 / 16%)", "usage": "Мягкий золотой focus-ring для доступной клавиатурной навигации." }
+  },
+  "effects": {
+    "backdrop-blur": "8px",
+    "glass-opacity": null,
+    "transition-default": "all 0.2s ease",
+    "transition-slow": "all 0.4s ease"
+  },
+  "components": {
+    "button": {
+      "primary": { "bg": "var(--color-primary)", "text": "var(--color-text-on-primary)", "radius": "var(--radius-md)", "padding": "var(--space-3) var(--space-6)", "hover": "var(--color-primary-hover)" },
+      "secondary": { "bg": "var(--color-surface)", "text": "var(--color-text-primary)", "radius": "var(--radius-md)", "border": "var(--color-border)" },
+      "dark": { "bg": "var(--color-secondary)", "text": "var(--color-text-on-dark)", "radius": "var(--radius-md)" },
+      "ghost": { "bg": "transparent", "text": "var(--color-text-primary)", "radius": "var(--radius-md)" }
+    },
+    "card": { "bg": "var(--color-surface)", "radius": "var(--radius-lg)", "shadow": "var(--shadow-md)", "padding": "var(--space-6)", "border": "var(--color-border)" },
+    "input": { "bg": "var(--color-surface)", "border": "var(--color-border)", "radius": "var(--radius-md)", "text": "var(--color-text-primary)", "placeholder": "var(--color-text-secondary)", "focus-ring": "var(--shadow-glow)" },
+    "badge": { "bg": "var(--color-gold-soft)", "text": "var(--color-text-primary)", "radius": "var(--radius-full)" }
+  }
+}
