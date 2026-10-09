@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#faf9f6">
+    <meta name="description" content="Информация о стоматологической клинике, услугах, медицинских работниках и документах.">
+    <title>Информация об организации — СтатуСтом</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="design-system-statestom/design-system.css">
+    <link rel="stylesheet" href="site.css?v=20261010">
+    <script src="https://lidrekon.ru/slep/js/jquery.js" defer></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" defer></script>
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <header class="site-header">
+      <div class="site-shell site-header__inner">
+        <a class="wordmark" href="index.html" aria-label="СтатуСтом — главная">
+          <img class="wordmark__logo" src="public/img/logo.png" alt="" aria-hidden="true">
+        </a>
+        <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+          <a href="#clinic">О клинике</a>
+          <a href="#services">Услуги</a>
+          <a href="#staff">Медработники</a>
+          <a href="#documents">Документы</a>
+          <a class="site-nav__mobile-action" href="index.html#services">Услуги</a>
+        </nav>
+        <a class="button button--small site-header__action" href="index.html#services">Услуги</a>
+        <button class="special-access-button" id="specialButton" type="button" aria-label="Включить версию для слабовидящих" title="Версия для слабовидящих">
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none">
+            <path d="M2.5 12s3.4-6 9.5-6 9.5 6 9.5 6-3.4 6-9.5 6-9.5-6-9.5-6Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+            <circle cx="12" cy="12" r="2.8" stroke="currentColor" stroke-width="1.7" />
+          </svg>
+        </button>
+        <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-intro page-intro--organization site-shell" aria-labelledby="page-title">
+        <div class="page-intro__copy" data-reveal>
+          <h1 class="hero__title" id="page-title">Сведения об организации</h1>
+          <p class="page-intro__description">Официальные сведения о лицензии, медицинских работниках, услугах и документах клиники.</p>
+        </div>
+      </section>
+
+      <nav class="organization-index site-shell" aria-label="Разделы страницы">
+        <a href="#clinic">О клинике</a>
+        <a href="#license">Лицензия</a>
+        <a href="#services">Услуги и цены</a>
+        <a href="#staff">Медработники</a>
+        <a href="#patients">Пациентам</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#documents">Документы</a>
+        <a href="#authorities">Надзорные органы</a>
+      </nav>
+
+      <section class="section organization-section organization-section--clinic" id="clinic" aria-labelledby="clinic-title">
+        <div class="site-shell">
+          <div class="section-heading" data-reveal>
+            <h2 class="section-title" id="clinic-title">Основные сведения</h2>
+            <p class="section-intro">Важная информация о клинике собрана в одном месте — удобно и понятно.</p>
+          </div>
+          <div class="organization-card-grid organization-card-grid--two">
+            <article class="organization-card" data-reveal>
+              <h3>Реквизиты и управление</h3>
+              <dl class="organization-facts">
+                <div><dt>Полное наименование</dt><dd data-content="clinic.legalName"></dd></div>
+                <div><dt>ОГРН / ОГРНИП</dt><dd data-content="clinic.registrationNumber"></dd></div>
+                <div><dt>ИНН</dt><dd data-content="clinic.taxId"></dd></div>
+                <div><dt>Учредители и органы управления</dt><dd data-content="clinic.management"></dd></div>
+              </dl>
+            </article>
+            <article class="organization-card" data-reveal>
+              <h3>Адреса и контакты</h3>
+              <dl class="organization-facts">
+                <div><dt>Адрес клиники и подразделений</dt><dd data-content="clinic.contact.address"></dd></div>
+                <div><dt>Почтовый адрес</dt><dd data-content="clinic.postalAddress"></dd></div>
+                <div><dt>Режим работы</dt><dd data-content="clinic.contact.workingHours"></dd></div>
+                <div><dt>Телефон и электронная почта</dt><dd><span data-content="clinic.contact.phone"></span> / <span data-content="clinic.contact.email"></span></dd></div>
+                <div><dt>Схема проезда</dt><dd data-content="clinic.route"></dd></div>
+                <div><dt>Приём граждан руководителем</dt><dd data-content="clinic.managerReception"></dd></div>
+                <div><dt>Запись на приём к руководителю</dt><dd data-content="clinic.managerBooking"></dd></div>
+              </dl>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section organization-section organization-section--license" id="license" aria-labelledby="license-title">
+        <div class="site-shell organization-license">
+          <div class="section-heading" data-reveal>
+            <h2 class="section-title" id="license-title">Лицензия</h2>
+            <p class="section-intro">Номер, дата и сведения о лицензирующем органе должны соответствовать официальной выписке из реестра.</p>
+          </div>
+          <div class="organization-card-grid organization-card-grid--license">
+            <article class="organization-card" data-reveal>
+              <dl class="organization-facts">
+                <div><dt>Номер лицензии</dt><dd data-content="clinic.license.number"></dd></div>
+                <div><dt>Дата предоставления</dt><dd data-content="clinic.license.issueDate"></dd></div>
+                <div><dt>Лицензирующий орган</dt><dd data-content="clinic.license.authority"></dd></div>
+                <div><dt>Адреса осуществления деятельности</dt><dd data-content="clinic.license.addresses"></dd></div>
+              </dl>
+            </article>
+            <div class="license-document" role="group" aria-label="Выписка из реестра лицензий или QR-код">
+              <span class="license-document__label">Выписка из реестра лицензий или QR-код</span>
+              <span class="license-document__value" data-content="clinic.license.document"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--organization-services organization-section" id="services" aria-labelledby="organization-services-title">
+        <div class="site-shell services-overview">
+          <div class="services-overview__intro" data-reveal>
+            <h2 class="section-title section-title--light" id="organization-services-title">Услуги и цены</h2>
+            <p data-content="clinic.servicesNote">Мы внимательно подходим к выбору решений и подробно обсуждаем каждый этап.</p>
+            <a class="text-link text-link--light" href="index.html#services">Основные направления помощи</a>
+          </div>
+          <div class="organization-service-details">
+            <dl class="organization-facts organization-facts--light">
+              <div><dt>Виды медицинской помощи</dt><dd data-content="clinic.serviceInformation.careTypes"></dd></div>
+              <div><dt>Порядок и условия оказания услуг</dt><dd data-content="clinic.serviceInformation.conditions"></dd></div>
+              <div><dt>Запись на приём и подготовка к процедурам</dt><dd data-content="clinic.serviceInformation.appointment"></dd></div>
+              <div><dt>Правила предоставления платных услуг</dt><dd data-content="clinic.serviceInformation.paidServices"></dd></div>
+              <div><dt>Образец договора</dt><dd data-content="clinic.serviceInformation.contract"></dd></div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="section organization-section organization-section--staff" id="staff" aria-labelledby="staff-title">
+        <div class="site-shell">
+          <div class="section-heading" data-reveal>
+            <h2 class="section-title" id="staff-title">Медицинские работники</h2>
+          </div>
+          <p class="organization-empty organization-empty--wide" data-doctors-empty data-content="clinic.doctorsNote" data-reveal>Каждый приём начинается с внимания к вашим вопросам и пожеланиям.</p>
+          <div class="organization-card-grid organization-card-grid--three" data-doctor-list role="list" aria-label="Медицинские работники"></div>
+          <template id="doctor-card-template">
+            <article class="organization-card doctor-data-card" role="listitem" data-hide-if-empty hidden>
+              <h3 data-doctor-name></h3>
+              <p data-doctor-specialty data-hide-if-empty hidden></p>
+              <dl class="organization-facts">
+                <div data-hide-if-empty hidden><dt>Образование</dt><dd data-doctor-education></dd></div>
+                <div data-hide-if-empty hidden><dt>Стаж</dt><dd data-doctor-experience></dd></div>
+                <div data-hide-if-empty hidden><dt>Расписание</dt><dd data-doctor-schedule></dd></div>
+                <div data-hide-if-empty hidden><dt>Квалификация</dt><dd data-doctor-qualification></dd></div>
+              </dl>
+            </article>
+          </template>
+        </div>
+      </section>
+
+      <section class="section organization-section organization-section--patients" id="patients" aria-labelledby="patients-title">
+        <div class="site-shell">
+          <div class="section-heading" data-reveal>
+            <h2 class="section-title" id="patients-title">Пациентам</h2>
+          </div>
+          <div class="organization-card-grid organization-card-grid--three">
+            <article class="organization-card" data-reveal>
+              <h3>Права и обязанности</h3>
+              <p>Права и обязанности граждан в сфере охраны здоровья</p>
+              <span class="organization-card__value" data-content="clinic.patientInformation.rights"></span>
+            </article>
+            <article class="organization-card" data-reveal>
+              <h3>Доступность для маломобильных пациентов и льготы</h3>
+              <p>Условия посещения клиники и сведения о предоставляемых льготах</p>
+              <span class="organization-card__value" data-content="clinic.patientInformation.accessibility"></span>
+            </article>
+            <article class="organization-card" data-reveal>
+              <h3>Отзывы и оценка качества</h3>
+              <p>Способ оставить отзыв или пройти независимую оценку качества</p>
+              <span class="organization-card__value" data-content="clinic.patientInformation.quality"></span>
+            </article>
+            <article class="organization-card" data-reveal>
+              <h3>Вакансии</h3>
+              <p>Информация об открытых вакансиях</p>
+              <span class="organization-card__value" data-content="clinic.patientInformation.vacancies"></span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--reviews organization-section organization-section--reviews" id="reviews" aria-labelledby="reviews-title">
+        <div class="site-shell">
+          <div class="section-heading" data-reveal>
+            <h2 class="section-title" id="reviews-title">Отзывы</h2>
+          </div>
+          <div class="review-slider" data-review-slider data-reveal role="region" aria-roledescription="карусель" aria-label="Отзывы пациентов">
+            <div class="review-slider__intro">
+              <p class="section-intro">Ваш опыт помогает другим лучше узнать клинику.</p>
+              <div class="review-slider__controls">
+                <button class="review-slider__button" type="button" data-review-prev aria-label="Предыдущие отзывы" aria-controls="review-track">←</button>
+                <button class="review-slider__button" type="button" data-review-next aria-label="Следующие отзывы" aria-controls="review-track">→</button>
+              </div>
+            </div>
+            <div class="review-slider__track" id="review-track" data-review-track role="group" aria-label="Места для отзывов пациентов" tabindex="0">
+              <article class="review-card" role="group" aria-roledescription="слайд" aria-label="Место для отзыва 1">
+                <blockquote><p>Текст отзыва пациента</p></blockquote>
+                <p class="review-card__author">Имя автора · дата</p>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="слайд" aria-label="Место для отзыва 2">
+                <blockquote><p>Текст отзыва пациента</p></blockquote>
+                <p class="review-card__author">Имя автора · дата</p>
+              </article>
+              <article class="review-card" role="group" aria-roledescription="слайд" aria-label="Место для отзыва 3">
+                <blockquote><p>Текст отзыва пациента</p></blockquote>
+                <p class="review-card__author">Имя автора · дата</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section organization-section organization-section--documents" id="documents" aria-labelledby="documents-title">
+        <div class="site-shell">
+          <div class="section-heading section-heading--row" data-reveal>
+            <div>
+              <h2 class="section-title" id="documents-title">Документы</h2>
+            </div>
+          </div>
+          <p class="section-intro">Важные материалы клиники собраны здесь, чтобы нужная информация была под рукой.</p>
+          <ul class="organization-document-list" aria-label="Документы клиники">
+            <li data-document-index="0">Правила предоставления платных медицинских услуг</li>
+            <li data-document-index="1">Образец договора на оказание платных медицинских услуг</li>
+            <li data-document-index="2">Политика обработки персональных данных</li>
+            <li data-document-index="3">Согласие на обработку персональных данных</li>
+            <li data-document-index="4">Согласие на обработку сведений о здоровье</li>
+            <li data-document-index="5">Сведения о получателях данных и используемых сервисах</li>
+          </ul>
+          <div class="organization-diplomas" id="diplomas">
+            <h3>Дипломы и сертификаты</h3>
+              <p class="organization-empty">За профессиональным мастерством стоят знания, опыт и постоянное развитие.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section organization-section organization-section--authorities" id="authorities" aria-labelledby="authorities-title">
+        <div class="site-shell">
+          <div class="section-heading" data-reveal>
+            <h2 class="section-title" id="authorities-title">Контакты надзорных органов</h2>
+          </div>
+          <div class="organization-card-grid organization-card-grid--three">
+            <article class="organization-card" data-reveal>
+              <h3 data-authority-name="0">Региональный орган управления здравоохранением</h3>
+              <dl class="organization-facts"><div><dt>Адрес и телефон</dt><dd data-authority-contact="0"></dd></div></dl>
+            </article>
+            <article class="organization-card" data-reveal>
+              <h3 data-authority-name="1">Росздравнадзор</h3>
+              <dl class="organization-facts"><div><dt>Адрес и телефон</dt><dd data-authority-contact="1"></dd></div></dl>
+            </article>
+            <article class="organization-card" data-reveal>
+              <h3 data-authority-name="2">Роспотребнадзор</h3>
+              <dl class="organization-facts"><div><dt>Адрес и телефон</dt><dd data-authority-contact="2"></dd></div></dl>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contacts">
+      <div class="site-shell site-footer__top">
+        <a class="wordmark wordmark--footer" href="index.html" aria-label="СтатуСтом — главная">
+          <img class="wordmark__logo" src="public/img/logo.png" alt="" aria-hidden="true">
+        </a>
+        <nav class="site-footer__nav" aria-label="Навигация в подвале">
+          <a href="index.html#about">О клинике</a><a href="index.html#services">Направления помощи</a><a href="#staff">Медицинские работники</a><a href="#documents">Документы</a>
+        </nav>
+        <address class="site-footer__contact" data-hide-if-empty hidden>
+          <span>Контакты</span>
+          <span data-hide-if-empty hidden>Адрес: <span data-content="clinic.contact.address"></span></span>
+          <span data-hide-if-empty hidden>Телефон: <span data-content="clinic.contact.phone"></span></span>
+          <span data-hide-if-empty hidden>Почта: <span data-content="clinic.contact.email"></span></span>
+        </address>
+      </div>
+      <div class="site-shell site-footer__bottom"><span>© <span data-content="clinic.name">СтатуСтом</span></span><span data-content="clinic.type">Стоматологическая клиника</span><a href="index.html">На главную</a></div>
+    </footer>
+  </body>
+</html>

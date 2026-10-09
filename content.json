@@ -1,0 +1,72 @@
+{
+  "clinic": {
+    "name": "СтатуСтом",
+    "type": "Стоматологическая клиника",
+    "description": "Стоматологическая клиника. Здесь собраны направления помощи, сведения об организации и информация о записи.",
+    "servicesNote": "Мы бережно относимся к каждому этапу лечения и помогаем выбрать подходящее решение.",
+    "appointmentNote": "Позаботимся, чтобы знакомство с клиникой прошло спокойно и понятно.",
+    "doctorsNote": "Каждый приём начинается с внимания к вашим вопросам и пожеланиям.",
+    "featuredDoctor": {
+      "name": null,
+      "specialty": null,
+      "education": null,
+      "experience": null,
+      "qualification": null,
+      "photo": "public/img/dentist-portrait.jpg"
+    },
+    "legalName": null,
+    "registrationNumber": null,
+    "taxId": null,
+    "management": null,
+    "postalAddress": null,
+    "route": null,
+    "managerReception": null,
+    "managerBooking": null,
+    "contact": {
+      "address": null,
+      "phone": null,
+      "email": null,
+      "workingHours": null
+    },
+    "license": {
+      "number": null,
+      "issueDate": null,
+      "authority": null,
+      "addresses": null,
+      "document": null
+    },
+    "serviceInformation": {
+      "careTypes": null,
+      "conditions": null,
+      "appointment": null,
+      "paidServices": null,
+      "contract": null
+    },
+    "patientInformation": {
+      "rights": null,
+      "accessibility": null,
+      "quality": null,
+      "vacancies": null
+    }
+  },
+  "services": [
+    { "name": "Консультация стоматолога", "detail": "Первичный приём", "price": null },
+    { "name": "Профессиональная гигиена", "detail": "Профилактика", "price": null },
+    { "name": "Лечение зубов", "detail": "Терапевтическая помощь", "price": null },
+    { "name": "Протезирование", "detail": "Ортопедическая помощь", "price": null }
+  ],
+  "doctors": [],
+  "documents": [
+    "Правила предоставления платных медицинских услуг",
+    "Образец договора на оказание платных медицинских услуг",
+    "Политика обработки персональных данных",
+    "Согласие на обработку персональных данных",
+    "Согласие на обработку сведений о здоровье",
+    "Сведения о получателях данных и используемых сервисах"
+  ],
+  "authorities": [
+    { "name": "Региональный орган управления здравоохранением", "contact": null },
+    { "name": "Росздравнадзор", "contact": null },
+    { "name": "Роспотребнадзор", "contact": null }
+  ]
+}

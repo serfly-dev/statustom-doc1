@@ -1,2 +1,5 @@
 .remember/
 .token-optimizer/
+.vscode/
+.DS_Store
+design.md
